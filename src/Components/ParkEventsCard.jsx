@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getRandomParkImage } from '../Helpers/htmlRemoverHelper';
+import { stripHtmlTagsAndDecode, getRandomParkImage } from '../Helpers/htmlRemoverHelper';
 
 function ParkEventsCard({ event }) {
 
@@ -17,11 +17,11 @@ function ParkEventsCard({ event }) {
   const imageUrl = getRandomParkImage();
 
   return (
-    <div className="">
-      <div className="">
-        <img src={imageUrl} alt="Park" className=""/>
-        <div className="">
-          <div className="bg-gray-900 ">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 flex flex-col relative">
+      <div className="relative">
+        <img src={imageUrl} alt="Park" className="w-full h-48 object-cover" style={{ maxHeight: '200px' }} />
+        <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+          <div className="bg-gray-900 bg-opacity-50 text-center text-white p-4 rounded">
             <div className="font-bold text-xl mb-2">{event.title}</div>
             <p className="text-base mb-2">
               {convertDateFormat(event.date)}
@@ -33,11 +33,14 @@ function ParkEventsCard({ event }) {
         </div>
       </div>
       <div className="px-6 py-4 flex flex-col flex-grow">
-        <div className="text-gray-700 text-base" >
-          {event.description}
+        <div className="text-gray-700 text-base" style={{ height: '160px', overflowY: 'auto' }}>
+          {stripHtmlTagsAndDecode(event.description)}
         </div>
 
       </div>
+
+
+
     </div>
   );
 }
