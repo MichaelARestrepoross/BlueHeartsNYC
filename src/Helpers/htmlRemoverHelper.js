@@ -1,6 +1,22 @@
 import parse from 'html-react-parser';
 import he from 'he';
 
+export function stripHtmlTagsAndDecode(str) {
+  if (!str) return '';
+
+  // Decode HTML strings
+  str = he.decode(str);
+
+  // Use html-react-parser to remove unwanted tags but keep the text content
+  return parse(str, {
+    replace: (domNode) => {
+      if (domNode.type === 'text') {
+        return domNode.data;
+      }
+      return null;
+    }
+  });
+}
 
 export function getRandomParkImage() {
   const parkImages = [
