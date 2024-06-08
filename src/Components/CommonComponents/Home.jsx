@@ -1,6 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import "./Home.css"
+
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div>
     <h1>Images</h1>
