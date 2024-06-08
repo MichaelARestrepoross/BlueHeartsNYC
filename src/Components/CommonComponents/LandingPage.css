@@ -10,11 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
     text-align: center;
-    font-size: larger;
+    margin-top: 100px;
 }
   
 .landing-page-h1 {
@@ -26,13 +23,13 @@
 .landing-page-wrapper h3 {
     color: var(--duke-blue);
     font-weight: normal;
-    margin-top: 20px;
+    margin-top: 10px;
 }
   
 .landing-page-wrapper p {
     color: var(--jet);
     max-width: 800px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .landing-info{
