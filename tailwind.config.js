@@ -12,16 +12,13 @@ export default {
         xl: '1440px',
       },
       colors: {
-        'dark-navy': '#00043A',
-        'navy': '#002962',
-        'light-navy': '#004E89',
         'white': '#FFFFFF',
         'light-blue': '#407BA7',
-        'red': '#FF002B',
-        'red-orange': '#C00021',
-        'dark-red': '#A0001C',
-        'burgandy': '#800016',
-        'yellow': '#E0CA3D'
+        'jet': '#3c3744ff',
+        'duke-blue': '#090c9bff',
+        'byz-blue': '#3d52d5ff',
+        'powder-blue': '#b4c5e4ff'
+
       },
       fontFamily: {
         "noto-sans": ['"Noto Sans Symbols"', "sans-serif"],

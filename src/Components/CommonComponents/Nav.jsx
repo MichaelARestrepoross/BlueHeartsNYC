@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Nav() {
     return (
         <div>
-          <div className="bg-gradient-to-r  from-navy to-light-navy shadow-lg shadow-slate-900">
+          <div className="bg-gradient-to-r from-duke-blue to-byz-blue to-powder-blue shadow-lg shadow-slate-900">
             <div className="p-7 flex flex-row justify-between">
               <Link to={"/"}>
                 <div className="font-bold text-2xl text-white inline-block" style={{ fontFamily: 'Orbitron, sans-serif', fontStyle: 'normal' }}>
