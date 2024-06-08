@@ -12,7 +12,7 @@ import Home from "./Components/CommonComponents/Home";
 import Connect from "./Components/Connect";
 import EatWisely from "./Components/EatWisely";
 import MoveNaturally from "./Components/MoveNaturally";
-import Outlook from "./Components/Outlook";
+import OutLook from "./Components/OutLook";
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
       <Route path="/" element={<LandingPage />} />
         <Route path="/homepage" element={<Home />} />
         <Route path="/moveNaturally" element={<MoveNaturally />} />
-        <Route path="/rightoutlook" element={<Outlook />} />
+        <Route path="/rightoutlook" element={<OutLook />} />
         <Route path="/eatWisely" element={<EatWisely />} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/aboutthedevs" element={<AboutTheDevs />} />
