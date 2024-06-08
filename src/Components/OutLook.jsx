@@ -16,7 +16,7 @@ function Outlook() {
         alt="Blue Hearts NYC Slide"
         style={{ maxWidth: '100%', height: 'auto' }}
       />
-    <ArticleIndex/>
+    <ArticleIndex topic = {"books/review"}/>
     </>
   )
 }

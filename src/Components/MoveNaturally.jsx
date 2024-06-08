@@ -2,6 +2,9 @@ import React from 'react'
 import ArticleIndex from './ArticleIndex'
 
 function MoveNaturally() {
+    const navigate = useNavigate();
+    const [events, setEvents] = useState([]);
+    // move to move Naturally
   return (
     <>
     <div>Move Naturally</div>
@@ -16,7 +19,7 @@ function MoveNaturally() {
         alt="Blue Hearts NYC Slide"
         style={{ maxWidth: '100%', height: 'auto' }}
       />
-    <ArticleIndex/>
+    <ArticleIndex topic ={"sports"} />
     </>
   )
 }
