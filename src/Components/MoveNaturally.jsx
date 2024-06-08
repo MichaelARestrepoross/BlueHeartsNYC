@@ -1,5 +1,7 @@
-import React from 'react'
-import ArticleIndex from './ArticleIndex'
+import React, { useState, useEffect } from 'react';
+import ArticleIndex from './ArticleIndex';
+import MapView from './MapView'; 
+import { useNavigate } from 'react-router-dom';
 
 function MoveNaturally() {
     const navigate = useNavigate();
