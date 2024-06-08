@@ -22,11 +22,18 @@ const ParkEventsIndex = () => {
     fetchEvents();
   }, []);
 
+  const filteredEvents = events.filter(event => 
+    event.title &&
+    event.date &&
+    event.start_time &&
+    event.end_time &&
+    event.description
+  );
 
   return (
     <div className="flex flex-wrap justify-center">
-      {events.length > 0 ? (
-        events.map(event => (
+      {filteredEvents.length > 0 ? (
+        filteredEvents.map(event => (
           <ParkEventsCard key={event.event_id} event={event} />
         ))
       ) : (
