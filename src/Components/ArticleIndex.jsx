@@ -26,13 +26,21 @@ function ArticleIndex({topic}) {
     fetchArticles();
   }, []);
 
-
+  // Filter articles that don't have the required properties
+  const filteredArticles = articles.filter(article => 
+    article.title && 
+    article.abstract && 
+    article.published_date && 
+    article.url && 
+    article.multimedia && 
+    article.multimedia.length > 0
+  ).slice(4, 8);
 
   return (
     <div className="flex flex-wrap justify-center mt-8">
         
-      {articles.length > 0 ? (
-        articles.map(article => (
+      {filteredArticles.length > 0 ? (
+        filteredArticles.map(article => (
           <ArticleCard key={article.uri} article={article} />
         ))
       ) : (
