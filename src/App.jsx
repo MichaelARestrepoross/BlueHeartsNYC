@@ -15,19 +15,21 @@ import MoveNaturally from "./Components/MoveNaturally";
 import Outlook from "./Components/Outlook";
 
 const App = () => {
-  <>
-  <Nav/>
-  <Routes>
-    <Route path="/" element={<LandingPage />} />
-      <Route path="/homepage" element={<Home />} />
-      <Route path="/moveNaturally" element={<MoveNaturally />} />
-      <Route path="/rightoutlook" element={<Outlook />} />
-      <Route path="/eatWisely" element={<EatWisely />} />
-      <Route path="/connect" element={<Connect />} />
-      <Route path="/aboutthedevs" element={<AboutTheDevs />} />
-  </Routes>
-  <Footer/>
-</>
+  return (
+    <>
+    <Nav/>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+        <Route path="/homepage" element={<Home />} />
+        <Route path="/moveNaturally" element={<MoveNaturally />} />
+        <Route path="/rightoutlook" element={<Outlook />} />
+        <Route path="/eatWisely" element={<EatWisely />} />
+        <Route path="/connect" element={<Connect />} />
+        <Route path="/aboutthedevs" element={<AboutTheDevs />} />
+    </Routes>
+    <Footer/>
+    </>
+  )
 };
 
 export default App;
