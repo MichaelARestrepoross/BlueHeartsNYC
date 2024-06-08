@@ -7,6 +7,36 @@ function MoveNaturally() {
     const navigate = useNavigate();
     const [events, setEvents] = useState([]);
     // move to move Naturally
+
+    //map
+    useEffect(() => {
+      const fetchEvents = async () => {
+        try {
+          const fetchURL = `${VITE_MARKETS_BASE_URL}?$$app_token=${VITE_NYC_TOKEN}`
+          console.log(fetchURL)
+          const response = await fetch(fetchURL);
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const data = await response.json();
+          // Ensure the data contains valid latitude and longitude
+          const validData = data.filter(event => 
+            event.multipolygon && 
+            event.multipolygon.coordinates 
+          ).map(event => ({
+            ...event,
+            latitude: event.multipolygon.coordinates[0][0][0][1],
+            longitude: event.multipolygon.coordinates[0][0][0][0]
+          }));
+          setEvents(validData);
+        } catch (error) {
+          console.error('Error fetching events:', error);
+        }
+      };
+  
+      fetchEvents();
+    }, []);
+
   return (
     <>
     <div>Move Naturally</div>
