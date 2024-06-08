@@ -27,8 +27,9 @@ function ArticleIndex({topic}) {
   }, []);
 
 
+
   return (
-    <div className="flex">
+    <div className="flex flex-wrap justify-center mt-8">
         
       {articles.length > 0 ? (
         articles.map(article => (
