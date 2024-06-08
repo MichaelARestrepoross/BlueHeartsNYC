@@ -1,0 +1,41 @@
+.four-pillars-frame {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+
+.four-pillars-frame img {
+    width: 25em;
+    height: 25rem;
+    transition: transform 0.5s ease, z-index 0s; 
+    cursor: pointer;
+}
+
+.four-pillars-frame img:nth-child(1) {
+    justify-self: end;   
+    align-self: end;     
+}
+
+.four-pillars-frame img:nth-child(2) {
+    justify-self: start; 
+    align-self: end;     
+}
+
+.four-pillars-frame img:nth-child(3) {
+    justify-self: end;   
+    align-self: start;   
+}
+
+.four-pillars-frame img:nth-child(4) {
+    justify-self: start; 
+    align-self: start;   
+}
+
+.four-pillars-frame img:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.home-wrapper{
+    margin-bottom: 50px;
+}
