@@ -16,7 +16,7 @@ function MoveNaturally() {
         alt="Blue Hearts NYC Slide"
         style={{ maxWidth: '100%', height: 'auto' }}
       />
-    <ArticleIndex topic ={"sports"}/>
+    <ArticleIndex/>
     </>
   )
 }

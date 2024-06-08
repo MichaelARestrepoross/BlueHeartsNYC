@@ -16,7 +16,7 @@ function EatWisely() {
         alt="Blue Hearts NYC Slide"
         style={{ maxWidth: '100%', height: 'auto' }}
       />
-    <ArticleIndex topic = {"food"}/>
+    <ArticleIndex/>
     </>
   )
 }
