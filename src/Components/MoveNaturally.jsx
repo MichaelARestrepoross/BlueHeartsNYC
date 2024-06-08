@@ -22,7 +22,12 @@ function MoveNaturally() {
           // Ensure the data contains valid latitude and longitude
           const validData = data.filter(event => 
             event.multipolygon && 
-            event.multipolygon.coordinates 
+            event.multipolygon.coordinates && 
+            event.multipolygon.coordinates[0] && 
+            event.multipolygon.coordinates[0][0] && 
+            event.multipolygon.coordinates[0][0][0] && 
+            !isNaN(event.multipolygon.coordinates[0][0][0][1]) && 
+            !isNaN(event.multipolygon.coordinates[0][0][0][0])
           ).map(event => ({
             ...event,
             latitude: event.multipolygon.coordinates[0][0][0][1],
