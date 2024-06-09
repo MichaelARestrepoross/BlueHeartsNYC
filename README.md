@@ -8,6 +8,7 @@ Access a variety of articles focused on wellness, nutrition, and healthy living.
 
 ### Tranquil Gardens: 
 Discover and visit serene gardens throughout NYC to unwind and relax.
+
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1717692433/BlueHeartsNYC-MoveNaturally_duwdd7.jpg" alt="Tranquil" width="300" height="300">
 
 ### Park Events: 
@@ -16,7 +17,8 @@ Attend vibrant events in parks to engage with the community and participate in f
 
 ### Physical Activity: 
 Find locations and events to stay active and fit.
-<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1717951121/BlueHeartsNYC-GIFConnect_hcso48.gif" alt="Physical" width="300" height="300">
+
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1717951151/BlueHeartsNYC-GIFMoveNaturally_x2rrgw.gif" alt="Physical" width="300" height="300">
 
 ### Social Connections: 
 Connect with like-minded individuals who are committed to a healthy lifestyle.

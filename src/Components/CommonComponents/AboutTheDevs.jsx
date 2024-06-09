@@ -19,7 +19,7 @@ function AboutTheDevs() {
 
           {/* First Team Member */}
           <div className="bg-gray-100 hover:bg-gray-300 rounded-xl mx-10 my-10 shadow-2xl backdrop-brightness-150 backdrop-blur-3xl w-2/3 flex flex-col">
-            <div className="bg-pink-400 rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
+            <div className=" bg-duke-blue rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
               CM
             </div>
             <div className="p-5 flex-grow flex flex-col items-center justify-between text-center">
@@ -29,7 +29,7 @@ function AboutTheDevs() {
               </div>
               <div className="pt-2 flex flex-row justify-center">
                 <a href={"https://github.com/ChrisCodeTrials"} target={"_blank"}>
-                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
+                  <div className="bg-gray-500 rounded p-1 ml-2 hover:bg-black">
                     <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
@@ -49,7 +49,7 @@ function AboutTheDevs() {
 
           {/* Second Team Member */}
           <div className="bg-gray-100 hover:bg-gray-300 rounded-xl mx-10 my-10 shadow-2xl backdrop-brightness-150 backdrop-blur-3xl w-2/3 flex flex-col">
-            <div className="bg-emerald-500 rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
+            <div className="bg-byz-blue rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
               MR
             </div>
             <div className="p-5 flex-grow flex flex-col items-center justify-between text-center">
@@ -59,7 +59,7 @@ function AboutTheDevs() {
               </div>
               <div className="pt-2 flex flex-row justify-center">
                 <a href={"https://github.com/MichaelARestrepoross"} target={"_blank"}>
-                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
+                  <div className="bg-gray-500 rounded p-1 ml-2 hover:bg-black">
                     <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
@@ -89,7 +89,7 @@ function AboutTheDevs() {
               </div>
               <div className="pt-2 flex flex-row justify-center">
                 <a href={"https://github.com/isiahArrufat"} target={"_blank"}>
-                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
+                  <div className="bg-gray-500 rounded p-1 ml-2 hover:bg-black">
                     <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
@@ -119,7 +119,7 @@ function AboutTheDevs() {
               </div>
               <div className="pt-2 flex flex-row justify-center">
                 <a href={"https://github.com/MarlonPelau"} target={"_blank"}>
-                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
+                  <div className="bg-gray-500 rounded p-1 ml-2 hover:bg-black">
                     <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
