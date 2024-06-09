@@ -28,7 +28,10 @@ function EatWisely() {
 
     <p>Make New York City: Adopt, adapt and embrace a plant-forward diet with an emphasis on locally sourced vegetables, legumes, and nuts. Implement mindful eating habits such as smaller portion sizes and strategies to avoid overeating, helping to foster a healthier relationship with food and a more sustainable lifestyle. </p>
         </section>
+        <div className='article-wrapper'>
+          
     <ArticleIndex topic = {"food"} />
+        </div>
     </div>
   )
 }

@@ -83,8 +83,10 @@ function MoveNaturally() {
         locations={events}
         MapTopic = "Gardens" 
         />
+<div className='article-wrapper'>
 
     <ArticleIndex topic ={"sports"} />
+</div>
 
    </div>
   )

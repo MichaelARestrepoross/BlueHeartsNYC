@@ -66,7 +66,7 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
         </div>
       </div>
       <APIProvider apiKey={GOOGLE_MAPS_TOKEN}>
-        <div className='flex justify-normal' style={{ height: "400px", width: "52vw", borderRadius: "20px", overflow: "hidden" }}>
+        <div className='flex justify-normal' style={{ height: "400px", width: "54rem", borderRadius: "20px", overflow: "hidden" }}>
           {useCenterProp ? (
             <Map
               center={center}
