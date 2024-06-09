@@ -16,6 +16,7 @@ const AboutTheDevs = () => {
           Learn About Our Team
         </div>
         <div className="grid lg:grid-cols-2 md:gap-2 ml-12 pb-24">
+
           {/* First Team Member */}
           <div className="bg-gray-100 hover:bg-gray-300 rounded-xl mx-10 my-10 shadow-2xl backdrop-brightness-150 backdrop-blur-3xl w-2/3 flex flex-col">
             <div className="bg-pink-400 rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
@@ -29,16 +30,16 @@ const AboutTheDevs = () => {
               <div className="pt-2 flex flex-row justify-center">
                 <a href={"https://www.linkedin.com/in/c-miranda1"} target={"_blank"}>
                 <a href={"https://github.com/ChrisCodeTrials"} target={"_blank"}>
-                  <div className="bg-purple-500 rounded p-1 ml-4 hover:bg-black">
+                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
                     <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
-                  <div className="bg-blue-500 rounded p-1 hover:bg-black">
+                  <div className="bg-blue-500 rounded p-1 ml-2 hover:bg-black">
                     <Linkedin strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
                 <a href="mailto:ChristopherMiranda@pursuit.org">
-                  <div className="bg-green-500 rounded p-1 ml-4 hover:bg-black">
+                  <div className="bg-green-500 rounded p-1 ml-2 hover:bg-black">
                     <Mail strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
@@ -46,6 +47,35 @@ const AboutTheDevs = () => {
             </div>
           </div>
 
+          {/* Second Team Member */}
+          <div className="bg-gray-100 hover:bg-gray-300 rounded-xl mx-10 my-10 shadow-2xl backdrop-brightness-150 backdrop-blur-3xl w-2/3 flex flex-col">
+            <div className="bg-emerald-500 rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
+              MR
+            </div>
+            <div className="p-5 flex-grow flex flex-col items-center justify-between text-center">
+              <div>
+                <div className="text-2xl">Michael Restrepoross</div>
+                <div>Software Engineer</div>
+              </div>
+              <div className="pt-2 flex flex-row justify-center">
+                <a href={"https://github.com/MichaelARestrepoross"} target={"_blank"}>
+                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
+                    <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+                <a href={"https://www.linkedin.com/in/michael-restrepoross"} target={"_blank"}>
+                  <div className="bg-blue-500 rounded p-1 ml-2 hover:bg-black">
+                    <Linkedin strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+                <a href="mailto:MichaelRestrepoross@pursuit.org">
+                  <div className="bg-green-500 rounded p-1 ml-2 hover:bg-black">
+                    <Mail strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
