@@ -2,7 +2,7 @@ import { Linkedin } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
 import { Mail } from "lucide-react";
 
-const AboutTheDevs = () => {
+function AboutTheDevs() {
   return (
     <div>
       <div
