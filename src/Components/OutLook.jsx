@@ -11,11 +11,14 @@ function Outlook() {
 
         <h3>People in the Blue Zones have a sense of purpose, a reason to wake up in the morning, which can add up to seven years of extra life expectancy. They also take time to downshift, pray, meditate, or nap.</h3>
       </div>
+      <div className='image-wrapper'>
     <img 
         src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1717784086/BlueHeartsNYC-GIFOutlook_yvntbi.gif" 
         alt="Blue Hearts NYC Slide"
         style={{ maxWidth: '100%', height: 'auto' }}
+        className='pillar-image'
       />
+      </div>
       <br />
       <section className='goal-wrapper'>
 
