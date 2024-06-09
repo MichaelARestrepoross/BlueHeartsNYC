@@ -3,6 +3,11 @@ import ArticleIndex from './ArticleIndex';
 import MapView from './MapView'; 
 import { useNavigate } from 'react-router-dom';
 
+const VITE_MARKETS_BASE_URL = import.meta.env.VITE_MARKETS_BASE_URL;
+const VITE_NYC_TOKEN = import.meta.env.VITE_NYC_TOKEN;
+const VITE_GOOGLE_MAPS_TOKEN = import.meta.env.VITE_GOOGLE_MAPS_TOKEN;
+const VITE_GOOGLE_MAP_ID = import.meta.env.VITE_GOOGLE_MAP_ID;
+
 function MoveNaturally() {
     const navigate = useNavigate();
     const [events, setEvents] = useState([]);
@@ -42,6 +47,8 @@ function MoveNaturally() {
       fetchEvents();
     }, []);
 
+
+
   return (
     <>
     <div>Move Naturally</div>
@@ -56,6 +63,14 @@ function MoveNaturally() {
         alt="Blue Hearts NYC Slide"
         style={{ maxWidth: '100%', height: 'auto' }}
       />
+
+      <MapView 
+        GOOGLE_MAPS_TOKEN={VITE_GOOGLE_MAPS_TOKEN} 
+        GOOGLE_MAP_ID={VITE_GOOGLE_MAP_ID} 
+        locations={events}
+        MapTopic = "Gardens" 
+      />
+
     <ArticleIndex topic ={"sports"} />
     </>
   )
