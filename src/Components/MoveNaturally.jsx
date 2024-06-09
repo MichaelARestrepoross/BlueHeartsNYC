@@ -18,7 +18,6 @@ function MoveNaturally() {
       const fetchEvents = async () => {
         try {
           const fetchURL = `${VITE_MARKETS_BASE_URL}?$$app_token=${VITE_NYC_TOKEN}`
-          console.log(fetchURL)
           const response = await fetch(fetchURL);
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -47,8 +46,6 @@ function MoveNaturally() {
       fetchEvents();
     }, []);
 
-
-
   return (
       <div className='pillar-wrapper'>
         <div className='pillar-descrip'>
@@ -58,11 +55,15 @@ function MoveNaturally() {
       <h3>"Centenarians in the Blue Zones areas live in environments that nudge them to move naturally every twenty minutes, rather than separating fitness into a different part of their day. It's built into their lifestyles subconsciously. Their habits may make you want to abandon fitness altogether." -Dan Buettner</h3>
 
         </div>
+        <div className='image-wrapper'>
+
     <img 
         src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1717692433/BlueHeartsNYC-MoveNaturally_duwdd7.jpg" 
         alt="Blue Hearts NYC Slide"
-        style={{ maxWidth: '100%', height: 'auto' }}
+        style={{ maxWidth: '100%', height: '55rem' }}
+        className='pillar-image'
         />
+        </div>
         <br />
 
 <section className='goal-wrapper'> 

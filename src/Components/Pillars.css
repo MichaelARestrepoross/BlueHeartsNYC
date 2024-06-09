@@ -16,6 +16,14 @@
     display: block;
 }
 
+.image-wrapper{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
 .goal-wrapper,
 .pillar-descrip {
     display: block;
