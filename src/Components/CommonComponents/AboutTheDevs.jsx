@@ -77,6 +77,66 @@ const AboutTheDevs = () => {
             </div>
           </div>
 
+          {/* Third Team Member */}
+          <div className="bg-gray-100 hover:bg-gray-300 rounded-xl mx-10 my-10 shadow-2xl backdrop-brightness-150 backdrop-blur-3xl w-2/3 flex flex-col">
+            <div className="bg-indigo-500 rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
+              IA
+            </div>
+            <div className="p-5 flex-grow flex flex-col items-center justify-between text-center">
+              <div>
+                <div className="text-2xl">Isiah Arrufat</div>
+                <div>Software Engineer</div>
+              </div>
+              <div className="pt-2 flex flex-row justify-center">
+                <a href={"https://github.com/isiahArrufat"} target={"_blank"}>
+                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
+                    <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+                <a href={"https://www.linkedin.com/in/isiah-arrufat-508b04123/"} target={"_blank"}>
+                  <div className="bg-blue-500 rounded p-1 ml-2 hover:bg-black">
+                    <Linkedin strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+                <a href="mailto:IsiahArrufat@pursuit.org">
+                  <div className="bg-green-500 rounded p-1 ml-2 hover:bg-black">
+                    <Mail strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Fourth Team Member */}
+          <div className="bg-gray-100 hover:bg-gray-300 rounded-xl mx-10 my-10 shadow-2xl backdrop-brightness-150 backdrop-blur-3xl w-2/3 flex flex-col">
+            <div className="bg-blue-400 rounded-t-lg text-5xl text-white flex items-center justify-center p-4">
+              MR
+            </div>
+            <div className="p-5 flex-grow flex flex-col items-center justify-between text-center">
+              <div>
+                <div className="text-2xl">Marlon Regis</div>
+                <div>Software Engineer</div>
+              </div>
+              <div className="pt-2 flex flex-row justify-center">
+                <a href={"https://github.com/MarlonPelau"} target={"_blank"}>
+                  <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
+                    <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+                <a href={"https://www.linkedin.com/in/mrmarlon/"} target={"_blank"}>
+                  <div className="bg-blue-500 rounded p-1 ml-2 hover:bg-black">
+                    <Linkedin strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+                <a href="mailto:marlonregis@pursuit.org">
+                  <div className="bg-green-500 rounded p-1 ml-2 hover:bg-black">
+                    <Mail strokeWidth={2} className="text-white w-6 h-6" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
