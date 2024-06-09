@@ -1,0 +1,49 @@
+.pillar-wrapper {
+    margin-bottom: 150px;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pillar-image {
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    display: block;
+}
+
+.goal-wrapper,
+.pillar-descrip {
+    display: block;
+    background-color: var(--powder-blue);
+    text-align: center;
+
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pillar-descrip{
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: larger;
+}
+.goal-wrapper h2,
+.pillar-descrip h1 {
+    color: var(--white);
+    margin-bottom: 10px;
+    font-size: xx-large;
+
+}
+.pillar-descrip h3{
+    margin-top: 5px;
+    padding-bottom: 15px;
+    font-size: larger;
+}
+
