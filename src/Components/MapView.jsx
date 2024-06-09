@@ -51,7 +51,7 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
   };
 
   return (
-    <div className='w-100'>
+    <div className='w-100 pt-5'>
       <p className='w-400 rounded-xl bg-black/70 p-3 text-xl text-white' style={{ fontFamily: 'Silkscreen, sans-serif', fontStyle: 'normal' }}>
         {MapTopic}
       </p>
@@ -66,7 +66,7 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
         </div>
       </div>
       <APIProvider apiKey={GOOGLE_MAPS_TOKEN}>
-        <div className='flex justify-normal' style={{ height: "400px", width: "90vw", borderRadius: "20px", overflow: "hidden" }}>
+        <div className='flex justify-normal' style={{ height: "400px", width: "52vw", borderRadius: "20px", overflow: "hidden" }}>
           {useCenterProp ? (
             <Map
               center={center}

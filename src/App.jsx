@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom'
-
+import "./App.css"
 //Common Components
 import Nav from "./Components/CommonComponents/Nav";
 import Footer from "./Components/CommonComponents/Footer";

@@ -12,6 +12,7 @@
     align-items: center;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
   
 .landing-page-h1 {
@@ -29,7 +30,7 @@
 .landing-page-wrapper p {
     color: var(--jet);
     max-width: 800px;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .landing-info{

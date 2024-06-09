@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); 
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 .four-pillars-frame img {
@@ -36,6 +38,10 @@
     z-index: 10;
 }
 
-.home-wrapper{
-    margin-bottom: 50px;
+.home-wrapper {
+    margin-bottom: 150px;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
