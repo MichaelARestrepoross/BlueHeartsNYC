@@ -85,6 +85,10 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
                     />
                     {open === index && (
                       <InfoWindow position={{ lat: latitude, lng: longitude }} onCloseClick={() => setOpen(null)}>
+                        <div>
+                          <p>Garden Name: {gardenname}</p>
+                          <p>Address: <span style={{ cursor: 'pointer', color: '#1A73E8', textDecoration: 'underline' }} onClick={() => openGoogleMaps(latitude, longitude)}>{address}</span></p>
+                        </div>
                       </InfoWindow>
                     )}
                   </AdvancedMarker>
@@ -109,6 +113,10 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
                     />
                     {open === index && (
                       <InfoWindow position={{ lat: latitude, lng: longitude }} onCloseClick={() => setOpen(null)}>
+                        <div>
+                          <p>Garden Name: {gardenname}</p>
+                          <p>Address: <span style={{ cursor: 'pointer', color: '#1A73E8', textDecoration: 'underline' }} onClick={() => openGoogleMaps(latitude, longitude)}>{address}</span></p>
+                        </div>
                       </InfoWindow>
                     )}
                   </AdvancedMarker>
