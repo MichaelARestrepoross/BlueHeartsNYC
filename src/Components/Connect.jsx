@@ -28,7 +28,9 @@ function Connect() {
 
       <p>Make New York City: Strengthen family ties and create opportunities for community engagement through events, activities, and faith-based gatherings. Encourage New Yorkers to build and maintain supportive social circles, enhancing their emotional well-being and reinforcing positive lifestyle habits. </p> <br />
     </section>
-    <ParkEventsIndex className=''/>
+      <div className='article-wrapper'>
+        <ParkEventsIndex />
+      </div>
     </div>
   )
 }

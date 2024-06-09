@@ -2,7 +2,7 @@ import React from 'react'
 
 function ArticleCard({ article }) {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 flex flex-col">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 flex flex-col mb-10">
       <img className="w-full max-h-48 object-cover" src={article.multimedia[0]?.url} alt={article.multimedia[0]?.caption} />
       <div className="px-6 py-4 flex flex-col flex-grow">
         <div className="font-bold text-xl mb-2">{article.title}</div>

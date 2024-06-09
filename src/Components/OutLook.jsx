@@ -30,8 +30,9 @@ function Outlook() {
 
     <p>Make New York City: Encourage New Yorkers to find and nurture their sense of purpose, whether through career, hobbies, or community service. Promote daily practices such as meditation, mindfulness, or simply taking moments to relax and decompress, contributing to overall mental health and longevity. </p>
       </section>
-
+      <div className='article-wrapper'>
     <ArticleIndex topic = {"books/review"}/>
+      </div>
     </div>
   )
 }
