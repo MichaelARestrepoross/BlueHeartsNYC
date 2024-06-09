@@ -28,12 +28,12 @@ const AboutTheDevs = () => {
                 <div>Software Engineer</div>
               </div>
               <div className="pt-2 flex flex-row justify-center">
-                <a href={"https://www.linkedin.com/in/c-miranda1"} target={"_blank"}>
                 <a href={"https://github.com/ChrisCodeTrials"} target={"_blank"}>
                   <div className="bg-purple-500 rounded p-1 ml-2 hover:bg-black">
                     <FiGithub strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
                 </a>
+                <a href={"https://www.linkedin.com/in/c-miranda1"} target={"_blank"}>
                   <div className="bg-blue-500 rounded p-1 ml-2 hover:bg-black">
                     <Linkedin strokeWidth={2} className="text-white w-6 h-6" />
                   </div>
