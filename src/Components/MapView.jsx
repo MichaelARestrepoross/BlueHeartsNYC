@@ -39,9 +39,9 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
     setUseCenterProp(false);
   };
 
-  // Handle map click
-  const handleMapClick = () => {
-    setUseCenterProp(false); // Disable the center prop on map click
+  // Validate latitude and longitude
+  const isValidLatLng = (lat, lng) => {
+    return !isNaN(lat) && !isNaN(lng) && lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180;
   };
 
   // Open Google Maps with the provided latitude and longitude
@@ -76,6 +76,10 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
             >
               {locations.map((location, index) => {
                 const { latitude, longitude, gardenname, address } = location;
+                if (!isValidLatLng(latitude, longitude)) {
+                  console.error(`Invalid coordinates for location: ${gardenname}`);
+                  return null;
+                }
                 return (
                   <AdvancedMarker key={index} position={{ lat: latitude, lng: longitude }} onClick={() => setOpen(index)}>
                     <Pin
@@ -104,6 +108,10 @@ function MapView({ GOOGLE_MAPS_TOKEN, GOOGLE_MAP_ID, locations, MapTopic = "Curr
             >
               {locations.map((location, index) => {
                 const { latitude, longitude, gardenname, address } = location;
+                if (!isValidLatLng(latitude, longitude)) {
+                  console.error(`Invalid coordinates for location: ${gardenname}`);
+                  return null;
+                }
                 return (
                   <AdvancedMarker key={index} position={{ lat: latitude, lng: longitude }} onClick={() => setOpen(index)}>
                     <Pin
